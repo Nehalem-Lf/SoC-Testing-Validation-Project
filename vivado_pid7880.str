@@ -1,0 +1,2134 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 7880
+
+Current time: 	12/9/19 10:24:39 AM GMT
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	b9047350
+User home directory: C:/Users/b9047350
+User working directory: H:/VHDL/project_2/project_2
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/b9047350/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/b9047350/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	194 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 460 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: H:\VHDL\project_2\project_2\project_2.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project H:/VHDL/project_2/project_2/project_2.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 34 MB (+33540kb) [00:00:06]
+// [Engine Memory]: 402 MB (+269613kb) [00:00:06]
+// Tcl Message: open_project H:/VHDL/project_2/project_2/project_2.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 69 MB (+34108kb) [00:00:08]
+// [Engine Memory]: 457 MB (+36890kb) [00:00:08]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 464 MB. GUI used memory: 29 MB. Current time: 12/9/19 10:24:39 AM GMT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_2; location: H:/VHDL/project_2/project_2; part: xc7vx485tffg1157-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 741.906 ; gain = 114.332 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// [Engine Memory]: 483 MB (+2947kb) [00:00:15]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 626 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, union - foo (Residue_Generator.vhd)]", 1, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, union - foo (Residue_Generator.vhd)]", 1, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/Residue_Generator.vhd] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, ALU.vhd]", 2, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 516 MB (+10231kb) [00:10:49]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, ALU.vhd]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, ALU.vhd]", 2, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_ENABLE, "Enable File"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_ENABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled true [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/ALU.vhd] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 2); // z:k (G:JPanel, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ANDG_tb - Behavioral (ANDG_tb.vhd)]", 6, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ANDG_tb - Behavioral (ANDG_tb.vhd)]", 6, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ANDG_tb - Behavioral (ANDG_tb.vhd)]", 6, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/ANDG_tb.vhd] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources]", 7, true); // z:k (G:JPanel, cv:JFrame) - Node
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, Select.vhd]", 12, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, ALU_tbv.vhd]", 8, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, ALU_tbv.vhd]", 8, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_ENABLE, "Enable File"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_ENABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled true [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/ALU_tbv.vhd] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU - Behavioral (ALU.vhd)]", 1, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU - Behavioral (ALU.vhd)]", 1, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // V:a (Workspace:JPanel, cv:JFrame)
+selectCodeEditor("ALU.vhd", 404, 273); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("ALU.vhd", 463, 261); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("ALU.vhd", 505, 265); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 76 MB (+3706kb) [00:11:46]
+// Elapsed time: 33 seconds
+selectCodeEditor("ALU.vhd", 150, 99); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("ALU.vhd", 569, 262); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("ALU.vhd", 186, 95); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "ALU.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("ALU.vhd", 97, 101); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("ALU.vhd", 153, 95); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("ALU.vhd", 90, 95, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 956 seconds
+selectCodeEditor("ALU.vhd", 156, 91); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// f:bL (cv:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'tb_ALU' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// Tcl Message: "xvhdl -m64 --relax -prj tb_ALU_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity ALU ERROR: [VRFC 10-91] static_bit is not declared [H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/ALU.vhd:24] ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/ALU.vhd:18] INFO: [VRFC 10-240] VHDL file H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/ALU.vhd ignored due to errors 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cv:JFrame): Critical Messages: addNotify
+// 'e' command handler elapsed time: 6 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// HMemoryUtils.trashcanNow. Engine heap size: 519 MB. GUI used memory: 36 MB. Current time: 12/9/19 10:53:43 AM GMT
+// Elapsed time: 15 seconds
+selectCodeEditor("ALU.vhd", 163, 96); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "ALU.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// f:bL (cv:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'tb_ALU' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl -m64 --relax -prj tb_ALU_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity ALU INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/ALU_tbv.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity tb_ALU 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// Tcl Message: Vivado Simulator 2016.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration Starting simulation data flow analysis Completed simulation data flow analysis 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Time Resolution for simulation is 1ps Compiling package std.standard Compiling package ieee.std_logic_1164 Compiling package ieee.std_logic_arith Compiling package ieee.std_logic_unsigned Compiling package ieee.numeric_std Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default] Compiling architecture behavior of entity xil_defaultlib.tb_alu Built simulation snapshot tb_ALU_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_ALU_behav -key {Behavioral:sim_1:Functional:tb_ALU} -tclbatch {tb_ALU.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source tb_ALU.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ALU_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 819.344 ; gain = 0.000 
+// 'e' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // f:bL (cv:JFrame)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // v:aK
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // l:JideButton (JPanel:JComponent, cv:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - tb_ALU", "DesignTask.SIMULATION");
+// G:be (cv:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // G:be (cv:JFrame)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ao:DockableFrame (FrameContainer:JideTabbedPane)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU - Behavioral (ALU.vhd)]", 1, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU - Behavioral (ALU.vhd)]", 1, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/ALU.vhd] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ALU - behavior (ALU_tbv.vhd)]", 6, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ALU - behavior (ALU_tbv.vhd)]", 6, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+// [GUI Memory]: 81 MB (+1176kb) [00:30:02]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ALU - behavior (ALU_tbv.vhd)]", 5, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ALU - behavior (ALU_tbv.vhd)]", 5, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ALU - behavior (ALU_tbv.vhd)]", 5, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ALU - behavior (ALU_tbv.vhd)]", 5, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/ALU_tbv.vhd] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, Residue_Generator.vhd]", 10, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, mod3.vhd]", 13, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, mod3.vhd]", 13, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Elapsed time: 192 seconds
+selectCodeEditor("mod3.vhd", 254, 340); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("ALU.vhd", 191, 66); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "ALU.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 1, 92); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 247, 203); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 285, 253); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 208, 265); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 305, 254); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 190, 315); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 84, 318); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("mod3.vhd", 1, 300); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton("RDIResource.HInputHandler_UNICODE_QUOTES_DOUBLE_QUOTES_OR_DASHES_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectCodeEditor("mod3.vhd", 0, 146); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 0, 183); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 86, 170); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 81, 164); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 69 seconds
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectCodeEditor("mod3.vhd", 74, 143); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 155, 350); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 184, 370); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 419, 363); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("mod3.vhd", 131, 508); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 27 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mod3.vhd", 313, 106); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("mod3.vhd", 209, 439); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 228, 394); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 331, 387); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 394, 366); // bH:N (JPanel:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 539 MB. GUI used memory: 39 MB. Current time: 12/9/19 11:02:03 AM GMT
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, mod3.vhd]", 13, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, mod3.vhd]", 13, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_ENABLE, "Enable File"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_SRC_ENABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled true [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("mod3.vhd", 53, 182); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 194, 164); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 33 seconds
+selectCodeEditor("mod3.vhd", 190, 370); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("mod3.vhd", 227, 372); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 326, 370); // bH:N (JPanel:JComponent, cv:JFrame)
+// [Engine Memory]: 547 MB (+4476kb) [00:39:00]
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("mod3.vhd", 353, 369); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 361, 370); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("mod3.vhd", 173, 365); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 369, 363); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 139, 411); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 177, 393); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 258, 382); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 132, 408); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 142, 400); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 126, 418); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 145, 413); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 171, 401); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 273, 392); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 391, 370); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 272, 391); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("mod3.vhd", 132, 420); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 127, 402); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 122, 413); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("mod3.vhd", 108, 251); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 115, 252); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 117, 265); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 208, 279); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 218, 278); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 239, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 316, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 224, 305); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 238, 313); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 142, 333); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("mod3.vhd", 187, 349); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 197, 350); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 215, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 215, 348, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 215, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 272, 370); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 272, 370, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 272, 370); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 266, 370); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 86 MB (+1680kb) [00:40:55]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 2); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 2); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// f:bL (cv:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'mcounter' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl -m64 --relax -prj mcounter_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity mcounter 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot mcounter_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "mcounter_behav -key {Behavioral:sim_1:Functional:mcounter} -tclbatch {mcounter.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source mcounter.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'mcounter_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 819.344 ; gain = 0.000 
+// 'e' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // f:bL (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectCodeEditor("mod3.vhd", 81, 315); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 152, 523); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 278, 521); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 393, 536); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 98 MB (+8150kb) [00:41:29]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_CLOSE
+// G:be (cv:JFrame): Confirm Close: addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// f:bL (cv:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Confirm Close"); // G:be (cv:JFrame)
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'mcounter' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl -m64 --relax -prj mcounter_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity mcounter 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot mcounter_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "mcounter_behav -key {Behavioral:sim_1:Functional:mcounter} -tclbatch {mcounter.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source mcounter.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'mcounter_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 819.344 ; gain = 0.000 
+// 'e' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // f:bL (cv:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 547 MB. GUI used memory: 69 MB. Current time: 12/9/19 11:06:11 AM GMT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 282, -51); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 171, -31); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 199, -59); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 547 MB. GUI used memory: 47 MB. Current time: 12/9/19 11:06:14 AM GMT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 191, -36); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 72, 423); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 133, 436); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 86, 427); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 76, 420); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 64, 416); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 77, 419); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 216, 458); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 244, 455); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 244, 455); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 254, 455); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 254, 455, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 298, 454); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 298, 454, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 298, 454); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 284, 456); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 176, 437); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 176, 437, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 176, 437); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 120, 469); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 120, 469, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 120, 469); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 131, 485); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 131, 485, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 131, 485); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 101, 499); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 101, 499, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 101, 499); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 74, 505); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 119, 525); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 119, 525, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 119, 525); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 112, 538); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 112, 538, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 112, 538); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 112, 538); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 103, 556); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 257, 553); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 257, 553, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 257, 553); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 269, 529); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 269, 529, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 303, 532); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 302, 534, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 319, 535); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 317, 537); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 317, 537, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 346, 538); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 346, 538, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 362, 540); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 362, 540, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 362, 540); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("mod3.vhd", 380, 540); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 380, 540, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 380, 540); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 251, 558); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 251, 558, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 251, 558); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 136, 574); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 136, 584); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 149, 589); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 131, 590); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 176, 607); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 166, 589); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 166, 603); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 170, 576); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 159, 586); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 173, 574); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 150, 587); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 135, 574); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 249, 555); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 389, 538); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 213, 518); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 125, 500); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 235, 487); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 152, 466); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 364, 454); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 273, 436); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 188, 416); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 14, 278); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 90, 366); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("mod3.vhd", 38, 391); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 28, 385); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("mod3.vhd", 85, 316); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 94, 316); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 111, 321); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 121, 316); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 153, 321); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 175, 319); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 175, 319, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 187, 312); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 187, 312, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 187, 312); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 236, 332); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 236, 332, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 236, 332); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 178, 339); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 241, 262); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 20, 216); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 262 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 45, 363); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 16, 395); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 28, 389, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+selectCodeEditor("mod3.vhd", 18, 399); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("mod3.vhd", 213, 396); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 124, 408); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 82, 398); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 215, 401); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 32, 364); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 120, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 265, 335); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 228, 384); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 155, 520); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectCodeEditor("mod3.vhd", 268, 515); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mod3.vhd", 416, 328); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("mod3.vhd", 164, 422); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 131, 433); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 145, 412); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 345, 413); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 328, 399); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 196, 416); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 169, 432); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 358, 447); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 170, 466); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 254, 481); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 179, 504); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 244, 516); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 390, 537); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 305, 561); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("mod3.vhd", 141, 581); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 164, 611); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_CLOSE
+// G:be (cv:JFrame): Confirm Close: addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// f:bL (cv:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Confirm Close"); // G:be (cv:JFrame)
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'mcounter' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl -m64 --relax -prj mcounter_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity mcounter 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot mcounter_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "mcounter_behav -key {Behavioral:sim_1:Functional:mcounter} -tclbatch {mcounter.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source mcounter.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'mcounter_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 819.344 ; gain = 0.000 
+// 'e' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // f:bL (cv:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 553 MB. GUI used memory: 48 MB. Current time: 12/9/19 11:15:01 AM GMT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 4"); // v:aK
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // l:JideButton (JPanel:JComponent, cv:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - mcounter", "DesignTask.SIMULATION");
+// G:be (cv:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // G:be (cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 2); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 2); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mcounter - behavior_count (mod3.vhd)]", 6, false); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("mod3.vhd", 58, 300); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 228, 400); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 270, 555); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 181, 574); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 167, 594); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 163, 608); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 128, 605); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 2); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // y:JideButton (CommandBar:DockableBar, b:g)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // af:JMenuItem (am:JPopupMenu, b:g)
+// J:x (b:g): Create Source File: addNotify
+// Elapsed time: 17 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "mod3_tb"); // ao:JTextField (JPanel:JComponent, J:x)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "mod3counter_tb"); // ao:JTextField (JPanel:JComponent, J:x)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, J:x)
+dismissDialog("Create Source File"); // J:x (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 32 seconds
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: close [ open H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3counter_tb.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3counter_tb.vhd 
+// M:x (cv:JFrame): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, M:x)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // M:x (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mod3counter_tb - Behavioral (mod3counter_tb.vhd)]", 12, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mod3counter_tb - Behavioral (mod3counter_tb.vhd)]", 12, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 175, 582); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, ANDG_tb.vhd]", 17, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, ANDG_tb.vhd]", 17, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("ANDG_tb.vhd", 1, 364); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("ANDG_tb.vhd", 133, 604, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+selectCodeEditor("ANDG_tb.vhd", 689, 447); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 564, 408); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3counter_tb.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 95, 233); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 76, 234); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("mod3counter_tb.vhd", 98, 232); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3counter_tb.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 190, 299); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 234, 297); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 237, 296); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 237, 296); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3counter_tb.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 98, 332); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 80, 299); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 80, 299, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+typeControlKey((HResource) null, "mod3.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+typeControlKey((HResource) null, "mod3counter_tb.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 84, 570); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 84, 570, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+typeControlKey((HResource) null, "mod3counter_tb.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 293, 572); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("mod3counter_tb.vhd", 148, 385); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 560 MB. GUI used memory: 50 MB. Current time: 12/9/19 11:18:13 AM GMT
+// Elapsed time: 112 seconds
+selectCodeEditor("mod3counter_tb.vhd", 143, 538); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 119, 561); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 121, 554); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 128, 587); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 339, 485); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 324, 483); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 338, 481); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 128, 473); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 328, 451); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 343, 349); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 74, 336); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 78, 347); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 273, 329); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 286, 352); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("mod3counter_tb.vhd", 356, 353); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("mod3counter_tb.vhd", 170, 373); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 314, 454); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("mod3counter_tb.vhd", 138, 527); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 140, 521); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 124, 512); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 88, 530); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 315, 421); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("mod3counter_tb.vhd", 135, 533); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 229, 546); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 209, 544); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 149, 514); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 184, 534); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 174, 676); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 166, 637); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 167, 619); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 89, 623); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 58 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("mod3.vhd", 378, 542); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 368, 540); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 379, 536); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 398, 534); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 440, 537); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 314, 547); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 416, 536); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("mod3.vhd", 135, 589); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 142, 575); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 258, 557); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 412, 530); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("mod3.vhd", 290, 556); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 411, 530); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 236, 524); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 206, 520); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 251, 519); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 400, 536); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 359, 555); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 237, 570); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 162, 587); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 129, 576); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 114, 574); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 116, 571); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 139, 573); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 112, 570); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 122, 573); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 132, 589); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 179, 635); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 195, 671); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 147, 655); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 130, 661); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// f:bL (cv:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'mod3_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cv:JFrame): Critical Messages: addNotify
+// 'e' command handler elapsed time: 3 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cv:JFrame)
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // ao:DockableFrame (FrameContainer:JideTabbedPane)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-1061] Parsing VHDL file H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd into library xil_defaultlib [H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd:1]. ]", 26, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;H:\VHDL\project_2\project_2\project_2.srcs\sources_1\new\mod3.vhd;-;;-;16;-;line;-;1;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-1061] Parsing VHDL file H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3counter_tb.vhd into library xil_defaultlib [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3counter_tb.vhd:1]. ]", 28, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;H:\VHDL\project_2\project_2\project_2.srcs\sim_1\new\mod3counter_tb.vhd;-;;-;16;-;line;-;1;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 38, 7); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 38, 7, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 38, 7); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 63, 10); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 81, 9); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("mod3counter_tb.vhd", 194, 384); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 230, 263); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 352, 267); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// f:bL (cv:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'mod3_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cv:JFrame): Critical Messages: addNotify
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cv:JFrame)
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // h:JCheckBox (JPanel:JComponent, cv:JFrame): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 3, false, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [USF-XSim 62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information.. ]", 2, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [USF-XSim 62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information.. ]", 2, false, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 189, 133); // dI:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 189, 133, false, false, false, false, true); // dI:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 320, 150); // dI:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 3, false, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectCheckBox(PAResourceItoN.MsgView_STATUS_MESSAGES, (String) null, true); // h:JCheckBox (JPanel:JComponent, cv:JFrame): TRUE
+selectCheckBox(PAResourceItoN.MsgView_STATUS_MESSAGES, (String) null, false); // h:JCheckBox (JPanel:JComponent, cv:JFrame): FALSE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, true); // h:JCheckBox (JPanel:JComponent, cv:JFrame): TRUE
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1]", 17); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-1061] Parsing VHDL file H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd into library xil_defaultlib [H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd:1]. ]", 18, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;H:\VHDL\project_2\project_2\project_2.srcs\sources_1\new\mod3.vhd;-;;-;16;-;line;-;1;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 185, 342); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 2, 25); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("mod3counter_tb.vhd", 245, 202); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 116, 129); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// [GUI Memory]: 104 MB (+1189kb) [01:02:56]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 233, 263); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 56 seconds
+selectCodeEditor("mod3counter_tb.vhd", 258, 250); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 246, 272); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 253, 268); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 217, 246); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3counter_tb.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 300, 268); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3counter_tb.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 228, 267); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 224, 269); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 285, 267); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 377, 259); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("mod3counter_tb.vhd", 368, 264); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 81, 264, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 220, 370); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 99, 369, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// f:bL (cv:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'm3counter' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl -m64 --relax -prj m3counter_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity m3counter 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot m3counter_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "m3counter_behav -key {Behavioral:sim_1:Functional:m3counter} -tclbatch {m3counter.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source m3counter.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'm3counter_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 819.344 ; gain = 0.000 
+// 'e' command handler elapsed time: 5 seconds
+dismissDialog("Run Simulation"); // f:bL (cv:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 561 MB. GUI used memory: 55 MB. Current time: 12/9/19 11:29:45 AM GMT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 126, -53); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 44, -56); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 44, -56, false, false, false, false, true); // n:a (JViewport:JComponent, cv:JFrame) - Double Click
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 52 MB. Current time: 12/9/19 11:29:48 AM GMT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 263, -53); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 405, -59); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 55 MB. Current time: 12/9/19 11:29:50 AM GMT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 477, -60); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 360, -57); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 174, 267); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 174, 267, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 174, 267, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 363, 266); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3counter_tb.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 373, 368); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3counter_tb.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 132, 366); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_CLOSE
+// G:be (cv:JFrame): Confirm Close: addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// f:bL (cv:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Confirm Close"); // G:be (cv:JFrame)
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'm3counter' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl -m64 --relax -prj m3counter_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity m3counter 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot m3counter_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "m3counter_behav -key {Behavioral:sim_1:Functional:m3counter} -tclbatch {m3counter.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source m3counter.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'm3counter_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 819.344 ; gain = 0.000 
+// 'e' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // f:bL (cv:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 563 MB. GUI used memory: 91 MB. Current time: 12/9/19 11:30:34 AM GMT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 486, -64); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 6", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 6", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 233, 271); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 398, 255); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 366, 243); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 344, 293); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 163, 442); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 135, 431); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 161, 435); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 184, 455); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 102, 517); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 53, 521); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 94, 227); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 85, 314); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 54, 549); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("mod3counter_tb.vhd", 82, 416); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_CLOSE
+// G:be (cv:JFrame): Confirm Close: addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// f:bL (cv:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Confirm Close"); // G:be (cv:JFrame)
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'm3counter' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl -m64 --relax -prj m3counter_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity m3counter 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot m3counter_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "m3counter_behav -key {Behavioral:sim_1:Functional:m3counter} -tclbatch {m3counter.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source m3counter.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'm3counter_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 819.344 ; gain = 0.000 
+// 'e' command handler elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // f:bL (cv:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 565 MB. GUI used memory: 55 MB. Current time: 12/9/19 11:31:37 AM GMT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 381, -53); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 456, -57); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 529, -51); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 565 MB. GUI used memory: 54 MB. Current time: 12/9/19 11:31:40 AM GMT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 560, -47); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 691, -48); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 565 MB. GUI used memory: 55 MB. Current time: 12/9/19 11:31:40 AM GMT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 790, -54); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 855, -54); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 235, 261); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 44 seconds
+selectCodeEditor("mod3.vhd", 317, 383); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 139, 535); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 48, 536); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 126, 538, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+typeControlKey((HResource) null, "mod3.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("mod3.vhd", 135, 405); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 121, 538); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 121, 301); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 2, 299); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 110, 304); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 102, 354); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("mod3.vhd", 89, 364); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 125, 369); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 179, 248); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 115, 367); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 178 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // l:JideButton (JPanel:JComponent, cv:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - m3counter", "DesignTask.SIMULATION");
+// G:be (cv:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// c:x (cv:JFrame): Save Simulation Sources: addNotify
+dismissDialog("Confirm Close"); // G:be (cv:JFrame)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, c:x)
+dismissDialog("Save Simulation Sources"); // c:x (cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("mod3.vhd", 319, 390); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 130, 395); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 191, 273); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 61, 403); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 155, 545); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 144, 539); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_CLOSE
+// G:be (cv:JFrame): Confirm Close: addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// f:bL (cv:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Confirm Close"); // G:be (cv:JFrame)
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'm3counter' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl -m64 --relax -prj m3counter_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity m3counter 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot m3counter_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "m3counter_behav -key {Behavioral:sim_1:Functional:m3counter} -tclbatch {m3counter.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// [Engine Memory]: 583 MB (+9021kb) [01:14:17]
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source m3counter.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'm3counter_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 842.133 ; gain = 14.539 
+// 'e' command handler elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // f:bL (cv:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 583 MB. GUI used memory: 57 MB. Current time: 12/9/19 11:38:49 AM GMT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 100 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 115, 152); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 194, 461); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 201, 454); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 220, 423); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 275, 339); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 158, 352); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 1, 500); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 170, 599); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 151, 606); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 31, 500, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+selectCodeEditor("mod3counter_tb.vhd", 280, 588); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // l:JideButton (JPanel:JComponent, cv:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - m3counter", "DesignTask.SIMULATION");
+// G:be (cv:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // G:be (cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, m3counter - behavior_count (mod3.vhd)]", 12, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, m3counter - behavior_count (mod3.vhd)]", 12, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 129, 502); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 123, 517); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// Y:x (cv:JFrame): Specify Top Module: addNotify
+selectButton(PAResourceTtoZ.TopModuleDialog_SELECT_TOP_MODULE_FOR_YOUR_SIMULATION, (String) null); // r:a (ag:z, Y:x)
+// bL:g (Y:x):  Analyze source files for top modules : addNotify
+selectButton("PAResourceTtoZ.TopModuleChooser_NO_MODULES_WERE_FOUND_IN_YOUR_DESIGN_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, Y:x)
+// 'e' command handler elapsed time: 17 seconds
+dismissDialog("Specify Top Module"); // Y:x (cv:JFrame)
+selectCodeEditor("mod3.vhd", 34, 249); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 56, 402); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 63, 250); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 20 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// Y:x (cv:JFrame): Specify Top Module: addNotify
+selectButton(PAResourceTtoZ.TopModuleDialog_SELECT_TOP_MODULE_FOR_YOUR_SIMULATION, (String) null); // r:a (ag:z, Y:x)
+// bL:g (Y:x):  Analyze source files for top modules : addNotify
+selectButton("PAResourceTtoZ.TopModuleChooser_NO_MODULES_WERE_FOUND_IN_YOUR_DESIGN_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, Y:x)
+// 'e' command handler elapsed time: 3 seconds
+dismissDialog("Specify Top Module"); // Y:x (cv:JFrame)
+selectCodeEditor("mod3.vhd", 178, 518); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 63, 419, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// Y:x (cv:JFrame): Specify Top Module: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, Y:x)
+dismissDialog("Specify Top Module"); // Y:x (cv:JFrame)
+selectCodeEditor("mod3.vhd", 150, 402); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 146, 402); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 125, 247); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 110 MB (+576kb) [01:18:47]
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// Y:x (cv:JFrame): Specify Top Module: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, Y:x)
+// 'e' command handler elapsed time: 6 seconds
+dismissDialog("Specify Top Module"); // Y:x (cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, mod3.vhd]", 7, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, mod3.vhd]", 7, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_ENABLE, "Enable File"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_ENABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled true [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, m3counter - behavior_count (mod3.vhd)]", 12, false); // z:k (G:JPanel, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 11); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 11); // z:k (G:JPanel, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 284, 276); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 276, 271); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 72 seconds
+selectCodeEditor("mod3counter_tb.vhd", 147, 288); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 235, 276); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 251, 267); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 184 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("ANDG_tb.vhd", 322, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("ANDG_tb.vhd", 322, 283, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("ANDG_tb.vhd", 322, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 133 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 302, 266); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 261, 285); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("ANDG_tb.vhd", 234, 334); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 106 seconds
+selectCodeEditor("mod3.vhd", 243, 363); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 380, 351); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 286, 336); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 208, 338); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 233, 330); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 291, 336); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 205, 369); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 208, 353); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 358, 331); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 301, 296); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 253, 320); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 264, 307); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 275, 300); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 266, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 291, 263); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 370, 247); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 39 seconds
+selectCodeEditor("mod3counter_tb.vhd", 288, 336); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 288, 336, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 311, 331); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 311, 331, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 347, 330); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 347, 330, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 347, 330); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 356, 331); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 406, 333); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 406, 333, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 406, 333); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 380, 357); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 380, 357, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 380, 357); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 339, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 339, 348, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 339, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 382, 326); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 382, 326, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 382, 326); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("mod3counter_tb.vhd", 252, 295); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 252, 295, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 252, 295); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 259, 291); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 298, 273); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 298, 273, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 298, 273); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 293, 252); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 293, 252, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 293, 252); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 270, 264); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 270, 264, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 270, 264); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 294, 252); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 294, 252, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 294, 252); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 293, 252); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 61 seconds
+selectCodeEditor("mod3counter_tb.vhd", 284, 265); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 207, 398); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 184, 417); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 163, 404); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ANDG_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 133, 295); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 382, 338); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 258, 357); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 157, 350); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 206, 360); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 145, 391); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 255, 413); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 202, 435); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 202, 451); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 151, 422); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 160, 400); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 392 seconds
+selectCodeEditor("mod3.vhd", 132, 286); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 309, 349); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 193, 366); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 315, 385); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 197, 64); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, Residue_Generator.vhd]", 18, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, Select.vhd]", 19, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Residue_Generator.vhd]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, ANDG.vhd]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, ALU.vhd]", 3, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, ALU.vhd]", 3, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, ALU.vhd]", 3, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("ALU.vhd", 257, 295); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 83, 248); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 192, 243); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("mod3.vhd", 244, 267); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 120, 246); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 268, 270); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 253, 281); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 74, 278); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 74, 278, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 142, 289); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 166, 286); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 166, 286, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 207, 286); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 207, 286, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 237, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 203, 288); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 203, 288, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 206, 287); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 198, 287); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 231, 252); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("mod3.vhd", 212, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 286, 309); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 237, 299); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 199, 331); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 222, 309); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 199, 322); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 186, 328); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 138, 311); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 129, 330); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 136, 317); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 132, 329); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("ALU.vhd", 317, 146); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "ALU.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 41, 311); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 45, 310); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 216, 285); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("mod3.vhd", 120, 338); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 116 MB (+423kb) [01:42:05]
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("mod3.vhd", 34, 399); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 97, 302); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "mod3.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 7, 281); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 152, 459); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 150, 526); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 197, 333); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 197, 333, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 197, 333); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 188, 333, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+selectCodeEditor("mod3.vhd", 18, 77); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 18, 77, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("mod3.vhd", 321, 62); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("mod3.vhd", 335, 101); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 309, 54); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 12, 56, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("mod3.vhd", 58, 111); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 59, 108, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("mod3.vhd", 283, 122); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 28, 364); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("mod3.vhd", 149, 485); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 151, 488); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 413, 510); // bH:N (JPanel:JComponent, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 585 MB. GUI used memory: 58 MB. Current time: 12/9/19 12:08:49 PM GMT
+selectCodeEditor("mod3.vhd", 207, 484); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 225, 508); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 77, 491); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("mod3.vhd", 165, 485); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 191, 522); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 170, 490); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("mod3.vhd", 225, 506); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("mod3.vhd", 252, 518); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 212, 490); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 266, 518); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("mod3.vhd", 184, 494); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 192, 488); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 78 seconds
+selectCodeEditor("mod3.vhd", 209, 511); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 248, 514); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 411, 514); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 411, 510); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 416, 505); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 246, 482); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 222, 488); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 225, 490, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // V:JideMenu (am:JPopupMenu, Popup:JWindow)
+selectMenu(RDIResource.HCodeEditor_DIFF_WITH, "Diff with"); // V:JideMenu (am:JPopupMenu, Popup:JWindow)
+selectMenu(RDIResource.HCodeEditor_COMMANDS_TO_FOLD_TEXT, "Folding"); // V:JideMenu (am:JPopupMenu, Popup:JWindow)
+selectMenu(RDIResource.HCodeEditor_DIFF_WITH, "Diff with"); // V:JideMenu (am:JPopupMenu, Popup:JWindow)
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // V:JideMenu (am:JPopupMenu, Popup:JWindow)
+selectCodeEditor("mod3.vhd", 148, 499); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 176, 480); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 240, 492); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 190, 503); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 400, 503); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 400, 503, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 400, 503); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 378, 503); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("mod3.vhd", 195, 490); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 200, 489); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 252, 493); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 255, 491); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 205, 483); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 205, 483, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 205, 483); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 205, 483); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 286, 489); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 215, 492, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectCodeEditor("mod3.vhd", 193, 492); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("mod3.vhd", 77, 352); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 76, 391); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 84, 381); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 93, 380); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 93, 380, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 78, 383); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 78, 383, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 77, 379); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 77, 379, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 77, 385); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 119, 384); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 140, 384); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3.vhd", 68, 352); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 26, 387); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 155, 487); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 254, 526); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 246, 484); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 275, 485); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 176, 357); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 176, 357, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 176, 357); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 204, 412); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("mod3.vhd", 242, 434); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 73 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 238, 371); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 282, 330); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 360, 330); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 360, 330, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 360, 330); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 360, 330); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 268, 314); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 268, 314, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 268, 314); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 275, 296); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 275, 296, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3counter_tb.vhd", 275, 296); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3counter_tb.vhd", 390, 253); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mod3counter_tb.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("mod3.vhd", 153, 335); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 153, 335, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("mod3.vhd", 153, 335); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 150, 336); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 112, 340); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 93, 336); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 148, 300); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 151, 300); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("mod3.vhd", 254, 439); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 196 seconds
+selectCodeEditor("mod3.vhd", 304, 303); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("mod3.vhd", 312, 292); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 109 seconds
+typeControlKey((HResource) null, "mod3.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 168, 332); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 145, 361); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mod3.vhd", 111, 352); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 870 seconds
+closeMainWindow("project_2 - [H:/VHDL/project_2/project_2/project_2.xpr] - Vivado 2016.2"); // cv:JFrame
+// aV:y (cv:JFrame): Save Project: addNotify

@@ -1,0 +1,769 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Dec 11 13:19:00 2019
+# Process ID: 6672
+# Current directory: H:/VHDL/project_2/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7844 H:\VHDL\project_2\project_2\project_2.xpr
+# Log file: H:/VHDL/project_2/project_2/vivado.log
+# Journal file: H:/VHDL/project_2/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/VHDL/project_2/project_2/project_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 713.250 ; gain = 77.668
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3counter_tb.vhd]
+set_property is_enabled true [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/compar.vhd]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/compar_tb.vhd w ]
+add_files -fileset sim_1 H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/compar_tb.vhd
+update_compile_order -fileset sim_1
+close [ open H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd w ]
+add_files H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'comparator_2' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj comparator_2_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/compar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cmp_cell
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comparator_2
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot comparator_2_behav xil_defaultlib.comparator_2 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <Cin> does not exist in entity <cmp_cell>.  Please compare the definition of block <cmp_cell> to its component declaration and its instantion to detect the mismatch. [H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd:15]
+ERROR: [VRFC 10-718] formal port <Cout> does not exist in entity <cmp_cell>.  Please compare the definition of block <cmp_cell> to its component declaration and its instantion to detect the mismatch. [H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd:16]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit comparator_2 in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_comparator_VHDL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_comparator_VHDL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/compar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cmp_cell
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comparator_2
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/compar_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_comparator_VHDL
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_comparator_VHDL_behav xil_defaultlib.tb_comparator_VHDL -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <Cin> does not exist in entity <cmp_cell>.  Please compare the definition of block <cmp_cell> to its component declaration and its instantion to detect the mismatch. [H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd:15]
+ERROR: [VRFC 10-718] formal port <Cout> does not exist in entity <cmp_cell>.  Please compare the definition of block <cmp_cell> to its component declaration and its instantion to detect the mismatch. [H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd:16]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_comparator_vhdl in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_comparator_VHDL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_comparator_VHDL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/compar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cmp_cell
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comparator_2
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/compar_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_comparator_VHDL
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_comparator_VHDL_behav xil_defaultlib.tb_comparator_VHDL -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture cmp_cell of entity xil_defaultlib.cmp_cell [cmp_cell_default]
+Compiling architecture cmp_2 of entity xil_defaultlib.comparator_2 [comparator_2_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_comparator_vhdl
+Built simulation snapshot tb_comparator_VHDL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_comparator_VHDL_behav -key {Behavioral:sim_1:Functional:tb_comparator_VHDL} -tclbatch {tb_comparator_VHDL.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_comparator_VHDL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_comparator_VHDL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 842.387 ; gain = 26.281
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_comparator_VHDL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_comparator_VHDL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/compar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cmp_cell
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comparator_2
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/compar_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_comparator_VHDL
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_comparator_VHDL_behav xil_defaultlib.tb_comparator_VHDL -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture cmp_cell of entity xil_defaultlib.cmp_cell [cmp_cell_default]
+Compiling architecture cmp_2 of entity xil_defaultlib.comparator_2 [comparator_2_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_comparator_vhdl
+Built simulation snapshot tb_comparator_VHDL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_comparator_VHDL_behav -key {Behavioral:sim_1:Functional:tb_comparator_VHDL} -tclbatch {tb_comparator_VHDL.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_comparator_VHDL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_comparator_VHDL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 842.387 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_comparator_VHDL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_comparator_VHDL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/compar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cmp_cell
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comparator_2
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/compar_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_comparator_VHDL
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_comparator_VHDL_behav xil_defaultlib.tb_comparator_VHDL -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture cmp_cell of entity xil_defaultlib.cmp_cell [cmp_cell_default]
+Compiling architecture cmp_2 of entity xil_defaultlib.comparator_2 [comparator_2_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_comparator_vhdl
+Built simulation snapshot tb_comparator_VHDL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_comparator_VHDL_behav -key {Behavioral:sim_1:Functional:tb_comparator_VHDL} -tclbatch {tb_comparator_VHDL.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_comparator_VHDL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_comparator_VHDL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 842.387 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_comparator_VHDL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_comparator_VHDL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/compar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cmp_cell
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comparator_2
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/compar_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_comparator_VHDL
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_comparator_VHDL_behav xil_defaultlib.tb_comparator_VHDL -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture cmp_cell of entity xil_defaultlib.cmp_cell [cmp_cell_default]
+Compiling architecture cmp_2 of entity xil_defaultlib.comparator_2 [comparator_2_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_comparator_vhdl
+Built simulation snapshot tb_comparator_VHDL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_comparator_VHDL_behav -key {Behavioral:sim_1:Functional:tb_comparator_VHDL} -tclbatch {tb_comparator_VHDL.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_comparator_VHDL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_comparator_VHDL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 842.387 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_comparator_VHDL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_comparator_VHDL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/compar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cmp_cell
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comparator_2
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/compar_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_comparator_VHDL
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_comparator_VHDL_behav xil_defaultlib.tb_comparator_VHDL -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture cmp_cell of entity xil_defaultlib.cmp_cell [cmp_cell_default]
+Compiling architecture cmp_2 of entity xil_defaultlib.comparator_2 [comparator_2_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_comparator_vhdl
+Built simulation snapshot tb_comparator_VHDL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_comparator_VHDL_behav -key {Behavioral:sim_1:Functional:tb_comparator_VHDL} -tclbatch {tb_comparator_VHDL.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_comparator_VHDL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_comparator_VHDL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 842.387 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_comparator_VHDL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_comparator_VHDL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/compar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cmp_cell
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comparator_2
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/compar_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_comparator_VHDL
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_comparator_VHDL_behav xil_defaultlib.tb_comparator_VHDL -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture cmp_cell of entity xil_defaultlib.cmp_cell [cmp_cell_default]
+Compiling architecture cmp_2 of entity xil_defaultlib.comparator_2 [comparator_2_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_comparator_vhdl
+Built simulation snapshot tb_comparator_VHDL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_comparator_VHDL_behav -key {Behavioral:sim_1:Functional:tb_comparator_VHDL} -tclbatch {tb_comparator_VHDL.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_comparator_VHDL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_comparator_VHDL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 842.387 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property is_enabled false [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/cmp4.vhd]
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/compar.vhd]
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/compar_tb.vhd]
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd w ]
+add_files -fileset sim_1 H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd
+update_compile_order -fileset sim_1
+set_property is_enabled true [get_files  H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'mod3tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj mod3tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mod3tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot mod3tb_behav xil_defaultlib.mod3tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.mod3tb
+Built simulation snapshot mod3tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mod3tb_behav -key {Behavioral:sim_1:Functional:mod3tb} -tclbatch {mod3tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source mod3tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Simtcl 6-168] No object found for the given pattern.
+WARNING: [Add_Wave-1] No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console.
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mod3tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 842.387 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_mod3
+ERROR: [VRFC 10-1412] syntax error near signal [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:22]
+ERROR: [VRFC 10-91] comparator_2 is not declared [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:25]
+ERROR: [VRFC 10-91] inab is not declared [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:31]
+ERROR: [VRFC 10-91] inab is not declared [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:33]
+ERROR: [VRFC 10-1412] syntax error near wait [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:36]
+ERROR: [VRFC 10-91] inab is not declared [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:35]
+ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:8]
+INFO: [VRFC 10-240] VHDL file H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity m3counter
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_mod3
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_mod3
+Built simulation snapshot tb_mod3_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_mod3.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 842.387 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity m3counter
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_mod3
+ERROR: [VRFC 10-1412] syntax error near ; [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:31]
+ERROR: [VRFC 10-1412] syntax error near 2 [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:33]
+ERROR: [VRFC 10-1412] syntax error near 8 [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:35]
+ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:8]
+INFO: [VRFC 10-240] VHDL file H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity m3counter
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_mod3
+ERROR: [VRFC 10-1412] syntax error near ; [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:31]
+ERROR: [VRFC 10-1412] syntax error near 2 [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:33]
+ERROR: [VRFC 10-1412] syntax error near 8 [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:35]
+ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:8]
+INFO: [VRFC 10-240] VHDL file H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity m3counter
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_mod3
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_mod3
+Built simulation snapshot tb_mod3_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_mod3.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 842.387 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity m3counter
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_mod3
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_mod3
+Built simulation snapshot tb_mod3_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_mod3.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 842.387 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity m3counter
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_mod3
+ERROR: [VRFC 10-91] internal_value3 is not declared [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:29]
+ERROR: [VRFC 10-283] actual of formal out port internal_value3 cannot be an expression [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:29]
+ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:8]
+INFO: [VRFC 10-240] VHDL file H:/VHDL/project_2/project_2/project_2.srcs/sim_1/new/mod3tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_2/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 17:22:05 2019...

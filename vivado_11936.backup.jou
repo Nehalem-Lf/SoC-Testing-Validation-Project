@@ -1,0 +1,99 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Dec 13 10:31:48 2019
+# Process ID: 11936
+# Current directory: H:/GitHub/SoC-Testing-Validation-Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5216 H:\GitHub\SoC-Testing-Validation-Project\project_2.xpr
+# Log file: H:/GitHub/SoC-Testing-Validation-Project/vivado.log
+# Journal file: H:/GitHub/SoC-Testing-Validation-Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/GitHub/SoC-Testing-Validation-Project/project_2.xpr
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/mod3.vhd]
+update_compile_order -fileset sources_1
+close [ open H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd w ]
+add_files H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/Mod3adder_tb.vhd w ]
+add_files -fileset sim_1 H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/Mod3adder_tb.vhd
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/mod3tb.vhd]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+remove_files -fileset sim_1 H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/mod3counter_tb.vhd
+file delete -force H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/mod3counter_tb.vhd
+launch_simulation
+source Mod3adder.tcl
+close_sim
+launch_simulation
+source Mod3adder.tcl
+close_sim
+launch_simulation
+source Mod3adder.tcl
+close_sim
+launch_simulation
+source Mod3adder.tcl
+close_sim
+launch_simulation
+source Mod3adder.tcl
+close_sim
+launch_simulation
+source Mod3adder.tcl
+close_sim
+launch_simulation
+source Mod3adder.tcl
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source Mod3adder_tb.tcl
+close_sim
+close_sim
+launch_simulation
+source Mod3adder_tb.tcl
+close_sim
+launch_simulation
+source Mod3adder_tb.tcl
+update_compile_order -fileset sim_1
+launch_simulation
+source Mod3adder.tcl
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+current_sim simulation_10
+close_sim
+launch_simulation
+source Mod3adder_tb.tcl
+close_sim
+close_sim
+set_property is_enabled false [get_files  H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd]
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/Mod3adder_tb.vhd]
+update_compile_order -fileset sim_1
+set_property is_enabled true [get_files  H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Residue_Generator.vhd]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/residue_tb.vhd w ]
+add_files -fileset sim_1 H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/residue_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source residue_gene.tcl
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source residue_tb.tcl
+close_sim
+launch_simulation
+source residue_tb.tcl
+add_wave {{/residue_tb/uut/tmpAB}} 
+close_sim
+launch_simulation
+source residue_tb.tcl
+close_sim
+close_sim

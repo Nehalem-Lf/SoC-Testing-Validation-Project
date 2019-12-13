@@ -28,10 +28,15 @@ begin
    ALU_Result <= A + B ; 
   when "001" => -- Subtraction
    ALU_Result <= A - B ;
-  when "010" => -- Multiplication
-   ALU_Result <= std_logic_vector(to_unsigned((to_integer(unsigned(A)) * to_integer(unsigned(B))),8)) ;
-  when "011" => -- Division
-   ALU_Result <= std_logic_vector(to_unsigned(to_integer(unsigned(A)) / to_integer(unsigned(B)),8)) ;
+  when "010" => -- Increase
+   ALU_Result <= A + 1 ;
+  when "011" => -- Decrease
+   ALU_Result <= A - 1 ;
+   
+  --when "010" => -- Multiplication
+   --ALU_Result <= std_logic_vector(to_unsigned((to_integer(unsigned(A)) * to_integer(unsigned(B))),8)) ;
+  --when "011" => -- Division
+   --ALU_Result <= std_logic_vector(to_unsigned(to_integer(unsigned(A)) / to_integer(unsigned(B)),8)) ;
   when "100" => -- Logical and 
    ALU_Result <= A and B;
   when "101" => -- Logical or

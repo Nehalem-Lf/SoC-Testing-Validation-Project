@@ -30,8 +30,7 @@ ARCHITECTURE behavior OF tb_ALU IS
   --Outputs
    signal ALU_Out : std_logic_vector(7 downto 0);
    signal Carryout : std_logic;
- 
- signal i:integer;
+   signal i:integer;
 BEGIN
  
  -- Instantiate the Unit Under Test (UUT)

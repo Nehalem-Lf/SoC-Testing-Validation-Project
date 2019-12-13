@@ -1,3 +1,5 @@
+-----------------------This file is only for experience, disable it for this project------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
@@ -29,7 +31,7 @@ signal tmpab2,tmpab3,tmpab4,tmpab5 : std_logic_vector(1 downto 0);
 signal tmpin1,tmpin2,ttmpin3 :std_logic_vector(2 downto 0);
 
 signal ttmp2,ttmp3,ttmp4,ttmp21,ttmp31,ttmp41: std_logic_vector(1 downto 0);
-signal value2,value3,value4: integer;
+--signal value2,value3,value4: integer;
 
 
     begin 

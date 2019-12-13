@@ -1,5 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  "../../../project_2.srcs/sim_1/new/mod3tb.vhd"
-
-# Do not sort compile order
-nosort

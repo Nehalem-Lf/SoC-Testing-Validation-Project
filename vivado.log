@@ -2,145 +2,53 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Thu Dec 12 14:17:17 2019
-# Process ID: 8388
-# Current directory: H:/VHDL/project_1/New folder/project_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2408 H:\VHDL\project_1\New folder\project_2\project_2.xpr
-# Log file: H:/VHDL/project_1/New folder/project_2/vivado.log
-# Journal file: H:/VHDL/project_1/New folder/project_2\vivado.jou
+# Start of session at: Fri Dec 13 10:31:48 2019
+# Process ID: 11936
+# Current directory: H:/GitHub/SoC-Testing-Validation-Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5216 H:\GitHub\SoC-Testing-Validation-Project\project_2.xpr
+# Log file: H:/GitHub/SoC-Testing-Validation-Project/vivado.log
+# Journal file: H:/GitHub/SoC-Testing-Validation-Project\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {H:/VHDL/project_1/New folder/project_2/project_2.xpr}
-INFO: [Project 1-313] Project file moved from 'H:/VHDL/project_2/project_2' since last save.
+open_project H:/GitHub/SoC-Testing-Validation-Project/project_2.xpr
+INFO: [Project 1-313] Project file moved from 'H:/VHDL/project_1/New folder/project_2' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
-open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 759.617 ; gain = 104.195
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 748.281 ; gain = 119.953
 update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/mod3.vhd]
+update_compile_order -fileset sources_1
+close [ open H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd w ]
+add_files H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/Mod3adder_tb.vhd w ]
+add_files -fileset sim_1 H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/Mod3adder_tb.vhd
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/mod3tb.vhd]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+remove_files -fileset sim_1 H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/mod3counter_tb.vhd
+file delete -force H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/mod3counter_tb.vhd
 launch_simulation
 INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
+INFO: [USF-XSim-37] Inspecting design source files for 'Mod3adder' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-ERROR: [VRFC 10-91] internal_value3 is not declared [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:29]
-ERROR: [VRFC 10-283] actual of formal out port internal_value3 cannot be an expression [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:29]
-ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:8]
-INFO: [VRFC 10-240] VHDL file H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd ignored due to errors
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav/xvhdl.log'
-ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 795.785 ; gain = 0.000
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-ERROR: [VRFC 10-724] found '0' definitions of operator "+", cannot determine exact overloaded matching definition for "+" [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd:50]
-ERROR: [VRFC 10-724] found '0' definitions of operator "+", cannot determine exact overloaded matching definition for "+" [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd:51]
-ERROR: [VRFC 10-1504] unit behavior_count ignored due to previous errors [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd:23]
-INFO: [VRFC 10-240] VHDL file H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd ignored due to errors
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav/xvhdl.log'
-ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-ERROR: [VRFC 10-91] internal_value3 is not declared [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:29]
-ERROR: [VRFC 10-283] actual of formal out port internal_value3 cannot be an expression [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:29]
-ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:8]
-INFO: [VRFC 10-240] VHDL file H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd ignored due to errors
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Mod3adder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav/xvhdl.log'
-ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-ERROR: [VRFC 10-91] internal_value3 is not declared [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:29]
-ERROR: [VRFC 10-283] actual of formal out port internal_value3 cannot be an expression [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:29]
-ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:8]
-INFO: [VRFC 10-240] VHDL file H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd ignored due to errors
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav/xvhdl.log'
-ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-ERROR: [VRFC 10-91] internal_value3 is not declared [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:29]
-ERROR: [VRFC 10-283] actual of formal out port internal_value3 cannot be an expression [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:29]
-ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:8]
-INFO: [VRFC 10-240] VHDL file H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd ignored due to errors
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-99] Step results log file:'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav/xvhdl.log'
-ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav/xvhdl.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
 Vivado Simulator 2016.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Mod3adder_behav xil_defaultlib.Mod3adder -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -149,301 +57,21 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mod3adder
+Built simulation snapshot Mod3adder_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 773.402 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
+   with args "Mod3adder_behav -key {Behavioral:sim_1:Functional:Mod3adder} -tclbatch {Mod3adder.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2016.2
 Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 822.707 ; gain = 6.176
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 822.707 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 825.867 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 836.641 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 836.641 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
+source Mod3adder.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -455,33 +83,31 @@ source tb_mod3.tcl
 # }
 # run 1000ns
 ERROR: Array sizes do not match, left array has 3 elements, right array has 2 elements
-Time: 0 ps  Iteration: 0  Process: /tb_mod3/uut/line__40
-  File: H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd
+Time: 0 ps  Iteration: 0  Process: /Mod3adder/line__53
+  File: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd
 
-HDL Line: H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd:40
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
+HDL Line: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd:53
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Mod3adder_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 836.641 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 779.883 ; gain = 6.480
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
 INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
+INFO: [USF-XSim-37] Inspecting design source files for 'Mod3adder' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Mod3adder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
 Vivado Simulator 2016.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Mod3adder_behav xil_defaultlib.Mod3adder -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -490,77 +116,20 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 836.641 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
+Compiling architecture behavioral of entity xil_defaultlib.mod3adder
+Built simulation snapshot Mod3adder_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
+   with args "Mod3adder_behav -key {Behavioral:sim_1:Functional:Mod3adder} -tclbatch {Mod3adder.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2016.2
 Time resolution is 1 ps
-source tb_mod3.tcl
+source Mod3adder.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -571,85 +140,318 @@ source tb_mod3.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
+ERROR: Array sizes do not match, left array has 3 elements, right array has 2 elements
+Time: 0 ps  Iteration: 0  Process: /Mod3adder/line__53
+  File: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd
+
+HDL Line: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd:53
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Mod3adder_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 836.641 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 786.523 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
 INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
+INFO: [USF-XSim-37] Inspecting design source files for 'Mod3adder' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 836.641 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Mod3adder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
 Vivado Simulator 2016.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Mod3adder_behav xil_defaultlib.Mod3adder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mod3adder
+Built simulation snapshot Mod3adder_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 816.688 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Mod3adder_behav -key {Behavioral:sim_1:Functional:Mod3adder} -tclbatch {Mod3adder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Mod3adder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Array sizes do not match, left array has 3 elements, right array has 2 elements
+Time: 0 ps  Iteration: 0  Process: /Mod3adder/line__32
+  File: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd
+
+HDL Line: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd:32
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Mod3adder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 816.688 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Mod3adder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Mod3adder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Mod3adder_behav xil_defaultlib.Mod3adder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mod3adder
+Built simulation snapshot Mod3adder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Mod3adder_behav -key {Behavioral:sim_1:Functional:Mod3adder} -tclbatch {Mod3adder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Mod3adder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Mod3adder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 816.688 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Mod3adder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Mod3adder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Mod3adder_behav xil_defaultlib.Mod3adder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mod3adder
+Built simulation snapshot Mod3adder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Mod3adder_behav -key {Behavioral:sim_1:Functional:Mod3adder} -tclbatch {Mod3adder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Mod3adder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Mod3adder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 821.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Mod3adder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Mod3adder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Mod3adder_behav xil_defaultlib.Mod3adder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mod3adder
+Built simulation snapshot Mod3adder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Mod3adder_behav -key {Behavioral:sim_1:Functional:Mod3adder} -tclbatch {Mod3adder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Mod3adder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Array sizes do not match, left array has 2 elements, right array has 3 elements
+Time: 0 ps  Iteration: 0  Process: /Mod3adder/line__36
+  File: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd
+
+HDL Line: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd:36
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Mod3adder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 821.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Mod3adder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Mod3adder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Mod3adder_behav xil_defaultlib.Mod3adder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mod3adder
+Built simulation snapshot Mod3adder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Mod3adder_behav -key {Behavioral:sim_1:Functional:Mod3adder} -tclbatch {Mod3adder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Mod3adder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Array sizes do not match, left array has 3 elements, right array has 2 elements
+Time: 0 ps  Iteration: 0  Process: /Mod3adder/line__35
+  File: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd
+
+HDL Line: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd:35
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Mod3adder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 821.320 ; gain = 0.000
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/Mod3adder_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Mod3adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Mod3adder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/Mod3adder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Mod3adder_tb_behav xil_defaultlib.Mod3adder_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -661,18 +463,419 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
+Compiling architecture behavioral of entity xil_defaultlib.Mod3adder [mod3adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.mod3adder_tb
+Built simulation snapshot Mod3adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Mod3adder_tb_behav -key {Behavioral:sim_1:Functional:Mod3adder_tb} -tclbatch {Mod3adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Mod3adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Array sizes do not match, left array has 3 elements, right array has 2 elements
+Time: 0 ps  Iteration: 0  Process: /Mod3adder_tb/uut/line__35
+  File: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd
+
+HDL Line: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd:35
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Mod3adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 821.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Mod3adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Mod3adder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/Mod3adder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Mod3adder_tb_behav xil_defaultlib.Mod3adder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.Mod3adder [mod3adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.mod3adder_tb
+Built simulation snapshot Mod3adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Mod3adder_tb_behav -key {Behavioral:sim_1:Functional:Mod3adder_tb} -tclbatch {Mod3adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Mod3adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Array sizes do not match, left array has 3 elements, right array has 2 elements
+Time: 0 ps  Iteration: 0  Process: /Mod3adder_tb/uut/line__35
+  File: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd
+
+HDL Line: H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd:35
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Mod3adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 847.133 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Mod3adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Mod3adder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/Mod3adder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Mod3adder_tb_behav xil_defaultlib.Mod3adder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.Mod3adder [mod3adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.mod3adder_tb
+Built simulation snapshot Mod3adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Mod3adder_tb_behav -key {Behavioral:sim_1:Functional:Mod3adder_tb} -tclbatch {Mod3adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Mod3adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Mod3adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 847.133 ; gain = 0.000
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/Mod3adder_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Mod3adder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Mod3adder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Mod3adder_behav xil_defaultlib.Mod3adder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavior of entity xil_defaultlib.mod3adder
+Built simulation snapshot Mod3adder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Mod3adder_behav -key {Behavioral:sim_1:Functional:Mod3adder} -tclbatch {Mod3adder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Mod3adder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Mod3adder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 847.133 ; gain = 0.000
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+current_sim simulation_10
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/Mod3adder_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/Mod3adder_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Mod3adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Mod3adder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/Mod3adder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mod3adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Mod3adder_tb_behav xil_defaultlib.Mod3adder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.Mod3adder [mod3adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.mod3adder_tb
+Built simulation snapshot Mod3adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Mod3adder_tb_behav -key {Behavioral:sim_1:Functional:Mod3adder_tb} -tclbatch {Mod3adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Mod3adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Mod3adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 847.133 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property is_enabled false [get_files  H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Mod3adder.vhd]
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/Mod3adder_tb.vhd]
+update_compile_order -fileset sim_1
+set_property is_enabled true [get_files  H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Residue_Generator.vhd]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/residue_tb.vhd w ]
+add_files -fileset sim_1 H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/residue_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'residue_gene' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj residue_gene_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Residue_Generator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity residue_gene
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot residue_gene_behav xil_defaultlib.residue_gene -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavior of entity xil_defaultlib.residue_gene
+Built simulation snapshot residue_gene_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "residue_gene_behav -key {Behavioral:sim_1:Functional:residue_gene} -tclbatch {residue_gene.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source residue_gene.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'residue_gene_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 847.133 ; gain = 0.000
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/residue_gene_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'residue_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj residue_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Residue_Generator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity residue_gene
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/residue_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity residue_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot residue_tb_behav xil_defaultlib.residue_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-665] expression has 2 elements ; formal a expects 8 [H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/residue_tb.vhd:43]
+ERROR: [VRFC 10-665] expression has 2 elements ; formal b expects 8 [H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/residue_tb.vhd:44]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit residue_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 847.133 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/residue_gene_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'residue_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj residue_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Residue_Generator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity residue_gene
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/residue_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity residue_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot residue_tb_behav xil_defaultlib.residue_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavior of entity xil_defaultlib.residue_gene [residue_gene_default]
+Compiling architecture behavioral of entity xil_defaultlib.residue_tb
+Built simulation snapshot residue_tb_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
+   with args "residue_tb_behav -key {Behavioral:sim_1:Functional:residue_tb} -tclbatch {residue_tb.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2016.2
 Time resolution is 1 ps
-source tb_mod3.tcl
+source residue_tb.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -683,29 +886,32 @@ source tb_mod3.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'residue_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 836.641 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 847.133 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/residue_gene_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/xelab.pb
 INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
+INFO: [USF-XSim-37] Inspecting design source files for 'residue_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj residue_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Residue_Generator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity residue_gene
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/residue_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity residue_tb
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
 Vivado Simulator 2016.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot residue_tb_behav xil_defaultlib.residue_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -714,21 +920,21 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
+Compiling package ieee.numeric_std
+Compiling architecture behavior of entity xil_defaultlib.residue_gene [residue_gene_default]
+Compiling architecture behavioral of entity xil_defaultlib.residue_tb
+Built simulation snapshot residue_tb_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
+   with args "residue_tb_behav -key {Behavioral:sim_1:Functional:residue_tb} -tclbatch {residue_tb.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2016.2
 Time resolution is 1 ps
-source tb_mod3.tcl
+source residue_tb.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -739,152 +945,33 @@ source tb_mod3.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'residue_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 859.883 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 847.133 ; gain = 0.000
+add_wave {{/residue_tb/uut/tmpAB}} 
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/residue_gene_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav/xelab.pb
 INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
+INFO: [USF-XSim-37] Inspecting design source files for 'residue_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-ERROR: Array sizes do not match, left array has 3 elements, right array has 2 elements
-Time: 0 ps  Iteration: 0  Process: /tb_mod3/uut/line__40
-  File: H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd
-
-HDL Line: H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd:40
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 859.883 ; gain = 0.000
-add_bp {H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd} 40
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-ERROR: Array sizes do not match, left array has 3 elements, right array has 2 elements
-Time: 0 ps  Iteration: 0  Process: /tb_mod3/uut/line__39
-  File: H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd
-
-HDL Line: H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd:39
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 859.883 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj residue_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Residue_Generator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity residue_gene
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/residue_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity residue_tb
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
 Vivado Simulator 2016.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot residue_tb_behav xil_defaultlib.residue_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -893,78 +980,21 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 859.883 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 859.883 ; gain = 0.000
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Compiling architecture behavior of entity xil_defaultlib.residue_gene [residue_gene_default]
+Compiling architecture behavioral of entity xil_defaultlib.residue_tb
+Built simulation snapshot residue_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/GitHub/SoC-Testing-Validation-Project/project_2.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
+   with args "residue_tb_behav -key {Behavioral:sim_1:Functional:residue_tb} -tclbatch {residue_tb.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2016.2
 Time resolution is 1 ps
-source tb_mod3.tcl
+source residue_tb.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -975,233 +1005,6 @@ source tb_mod3.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'residue_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 859.883 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 859.883 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 859.883 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 859.883 ; gain = 0.000
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sources_1/new/mod3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity m3counter
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavior_count of entity xil_defaultlib.m3counter [m3counter_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 859.883 ; gain = 0.000
-update_compile_order -fileset sources_1
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'tb_mod3' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj tb_mod3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tb_mod3
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-Vivado Simulator 2016.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c471ea0f0074ab48ffdb59540443f59 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mod3_behav xil_defaultlib.tb_mod3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-122] m3counter remains a black-box since it has no binding entity [H:/VHDL/project_1/New folder/project_2/project_2.srcs/sim_1/new/mod3tb.vhd:25]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling architecture behavior of entity xil_defaultlib.tb_mod3
-Built simulation snapshot tb_mod3_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/VHDL/project_1/New folder/project_2/project_2.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_mod3_behav -key {Behavioral:sim_1:Functional:tb_mod3} -tclbatch {tb_mod3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.2
-Time resolution is 1 ps
-source tb_mod3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mod3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 859.883 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 18:06:54 2019...
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 847.133 ; gain = 0.000

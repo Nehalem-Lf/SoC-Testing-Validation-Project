@@ -1849,3 +1849,5 @@ floatFrame(PAResourceOtoP.PAViews_CODE, "cmp4.vhd"); // ao:DockableFrame (FrameC
 floatFrame(PAResourceOtoP.PAViews_CODE, "main.vhd"); // ao:DockableFrame (FrameContainer:JideTabbedPane, cv:JFrame)
 // Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
 dismissDialog("Confirm Close"); // G:be (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 601 MB. GUI used memory: 62 MB. Current time: 1/3/20 4:54:18 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 605 MB. GUI used memory: 53 MB. Current time: 1/3/20 5:24:18 PM GMT

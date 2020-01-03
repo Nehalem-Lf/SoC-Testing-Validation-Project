@@ -30,8 +30,8 @@ architecture behaviour of func_sel is
     
     -- Decrease
     when "011" => xout <= ra ;
-    yout <= (not rb) ;
-    zout <= cin;
+    yout <= "00" ;
+    zout <= "10";
     
     -- Logical and  
     when "100" => xout <= "00" ; 

@@ -52,18 +52,26 @@ architecture Behavioral of main is
    end component;
  --------------------Comparator------------------------
    component comparator_2 is
-      Port ( 
-       x, y, z: in std_logic_vector(1 downto 0);
-       rc: out std_logic_vector(1 downto 0)
-       );
-    end component; 
+     port(
+      A,B: in std_logic_vector(1 downto 0);
+      Cmpin: in std_logic_vector(1 downto 0);
+      Cmpout: out std_logic_vector(1 downto 0));
+   end component; 
  signal AtoR :std_logic_vector(7 downto 0);
  signal RtoSa, RtoSb, RtoSab :std_logic_vector(1 downto 0);
  signal StoMx, StoMy, StoMz :std_logic_vector(1 downto 0);
  signal MtoC :std_logic_vector(1 downto 0);
  signal RtoC :std_logic_vector(1 downto 0);
- 
+ signal cout :std_logic;
+ signal ii :std_logic_vector(1 downto 0):=(others => '0');
 begin
 
+
+cell1:ALU port map (A ,B ,F ,AtoR ,cout);
+cell2:residuenoand port map (AtoR ,RtoC);
+cell3:residue_gene port map (A ,B ,RtoSa ,RtoSb ,RtoSab);
+cell4:func_sel port map (F ,cin ,RtoSa ,RtoSb ,RtoSab ,StoMx ,StoMy ,StoMz);
+cell5:Mod3adder port map (StoMx ,StoMy ,StoMz ,MtoC);
+cell6:comparator_2 port map (MtoC ,RtoC ,ii ,error);
 
 end Behavioral;

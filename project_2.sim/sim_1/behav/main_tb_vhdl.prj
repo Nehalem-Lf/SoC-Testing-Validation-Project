@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/compar.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/Select.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/Residue_GeneratorNoAND.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/Residue_Generator.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/Mod3adder.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/cmp4.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/ALU.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/main.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sim_1/new/main_tb.vhd"
+
+# Do not sort compile order
+nosort

@@ -34,7 +34,15 @@ signal ltmp1,ltmp2 :std_logic_vector(2 downto 0);
         ltmp2 <= ('0' & tmp13) + ('0' & tmpz);
         tmp2 <= tmp13 + tmpz;
         tmp23 <= tmp2 +ltmp2(2);
-        rc <= tmp23;
+     
+     
+     process (tmp23) is
+     begin
+     case tmp23 is
+     when "11" => rc <= "00";
+     when others => rc <= tmp23;
+     end case;
+     end process;
         
         
 

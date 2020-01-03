@@ -1,7 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sources_1/new/Select.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity func_sel
 INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/select_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity select_tb
-ERROR: [VRFC 10-91] tmpa is not declared [H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/select_tb.vhd:48]
-ERROR: [VRFC 10-91] tmpb is not declared [H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/select_tb.vhd:49]
-ERROR: [VRFC 10-91] tmpc is not declared [H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/select_tb.vhd:50]
-ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/select_tb.vhd:17]
-INFO: [VRFC 10-240] VHDL file H:/GitHub/SoC-Testing-Validation-Project/project_2.srcs/sim_1/new/select_tb.vhd ignored due to errors

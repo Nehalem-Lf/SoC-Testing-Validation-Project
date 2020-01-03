@@ -1,82 +1,59 @@
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
-use ieee.NUMERIC_STD.all;
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.std_logic_1164.all;
+ entity func_sel is
+  port( F: in std_logic_vector (2 downto 0);
+		cin,ra,rb,rab: in std_logic_vector(1 downto 0); 
+		xout, yout, zout : out std_logic_vector(1 downto 0));
+end func_sel;
+	
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
-entity SelCir is
-    Port ( 
-           RA, RB, RAB : in STD_LOGIC_VECTOR(1 downto 0);
-           x, y, z : out STD_LOGIC_VECTOR(1 downto 0);
-           F : in STD_LOGIC_VECTOR(2 downto 0);
-           cin : in STD_LOGIC_VECTOR(1 downto 0)
-           );
-end SelCir;
-
-
-architecture Behavioral of SelCir is
-signal tmpx, tmpy, tmpz : std_logic_vector(1 downto 0);
---signal F : std_logic_vector (2 downto 0);
-begin
-process(F, RA, RB, RAB)
-begin
+architecture behaviour of func_sel is
+ begin	
+  process (cin, ra, rb, rab, F) is
+  begin
+    case F is
     
-   if F = "000" then
-   tmpx <= RA ;
-   tmpy <= RB ;
-   tmpz <= cin;  
-   else if F = "001" then
-   tmpx <= RA ;
-   tmpy <= (not RB) ;
-   tmpz <= cin;
-   else
-   tmpx <= "000";
-   tmpy <= "000";
-   tmpz <= "000";
-   end if;
+    -- Addition
+    when "000" => xout <= ra; 
+    yout <= rb ;
+    zout <= cin; 
+    
+    -- Subtraction    
+    when "001" => xout <= ra ; 
+    yout <= (not rb) ;
+    zout <= cin;
+    
+    -- Increase  
+    when "010" => xout <= ra ;
+    yout <= "00" ;
+    zout <= "01";
+    
+    -- Decrease
+    when "011" => xout <= ra ;
+    yout <= (not rb) ;
+    zout <= cin;
+    
+    -- Logical and  
+    when "100" => xout <= "00" ; 
+    yout <= "00" ;
+    zout <= rab;
+    
+    -- Logical or   
+    when "101" => xout <= ra ;
+    yout <= rb ;
+    zout <= (not rab) ;
+    
+   -- Logical xor 
+    when "110" => xout <= ra ;
+    yout <= rb ;
+    zout <= rab ;
+
+when others => null; -- func remains unaltered
+end case;
+--xout <= tempx;
+--yout <= tempy;
+--zout <= tempz;
 end process;
-  -- case (F) is
-  -- when "000" => -- Addition
-    --  tmpx <= RA ;
-    --  tmpy <= RB ;
-    --  tmpz <= cin;   
-   --when "001" => -- Subtraction
-     -- tmpx <= RA ;
-     -- tmpy <= (not RB) ;
-     -- tmpz <= cin;
-   --when "010" => -- Increase
-     -- tmpx <= RA ;
-      --tmpy <= "00" ;
-      --tmpz <= "01";
---when "011" => -- Decrease
-     -- tmpx <= RA ;
-      --tmpy <= (not RB) ;
-      --tmpz <= cin;
-   --when "100" => -- Logical and 
-     -- tmpx <= "00" ;
-      --tmpy <= "00" ;
-     -- -tmpz <= RAB;
-   --when "101" => -- Logical or
-      --tmpx <= RA ;
-      --tmpy <= RB ;
-      --tmpz <= (not RAB) ;
- --  when "110" => -- Logical xor 
- --    -- tmpx <= RA ;
-     -- tmpy <= RB ;
-     -- tmpz <= RAB ;
-   --when others => 
-     -- tmpx <= "00";
-     -- tmpy <= "00";
-     -- tmpz <= "00";
-  -- end case ;
-  x <= tmpx;
-  y <= tmpy;
-  z <= tmpz;
-end Behavioral;
+end architecture behaviour;
+
+
